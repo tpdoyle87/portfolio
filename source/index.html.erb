@@ -1,19 +1,19 @@
 <div class="wrapper">
   <%= partial 'layouts/banner' %>
   <div class="container">
-    <div class="row">
+    <div class="row" id="aboutMe">
       <h2 class="text-center">
-       <%= link_to 'About Me', 'about.html' %>
+       About Me
       </h2>
-      <div class="col-xs-12 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+      <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
         <%= partial 'layouts/about' %>
       </div>
     </div>
-    <div class="row">
+    <div class="row" id="projects">
       <h2 class="text-center">
         Projects
       </h2>
-      <div class="col-xs-12 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+      <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
         <%= partial 'layouts/projects' %>
       </div>
     </div>
@@ -22,11 +22,11 @@
       <h2 class="text-center">
         Contact Me
       </h2>
-      <div class="col-xs-12 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+      <div class="col-xs-12 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
         <%= partial 'layouts/contact' %>
       </div>
     </div>
-    <hr>
   </div>
+  <h6 class="text-right top"><a href="#">Back to Top</a></h6>
   <%= partial 'layouts/footer' %>
 </div>
