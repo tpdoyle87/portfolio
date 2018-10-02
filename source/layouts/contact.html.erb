@@ -1,25 +1,28 @@
 <section id="contact">
   <div class="contact-section">
-    <form>
+    <form action="http://formspree.io/tpdoyle87@gmail.com" method="post" >
       <div class="col-md-8 col-md-offset-2 form-line">
           <div class="form-group">
             <label for="exampleInputUsername">Your name</label>
-            <input type="text" class="form-control" id="" placeholder=" Enter Name">
+            <input type="text" class="form-control" id="" name="_name" placeholder=" Enter Name">
           </div>
           <div class="form-group">
             <label for="exampleInputEmail">Email Address</label>
-            <input type="email" class="form-control" id="exampleInputEmail" placeholder=" Enter Email id">
+            <input type="email" class="form-control" id="exampleInputEmail" placeholder=" Enter Email id" name="_replyto">
           </div>
           <div class="form-group">
             <label for ="description"> Message</label>
-            <textarea  class="form-control" id="description" placeholder="Enter Your Message"></textarea>
+            <textarea  class="form-control" id="description" name="_message" placeholder="Enter Your Message"></textarea>
           </div>
           <div>
 
-            <button type="button" id="contact-submit" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+            <button type="submit" id="contact-submit" class="btn btn-default submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+            <input type="hidden" name="_next" value="http://lewagon.com" />
+            <input type="text" name="_gotcha" style="display:none" />
           </div>
 
       </div>
     </form>
   </div>
 </section>
+
