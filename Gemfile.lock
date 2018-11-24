@@ -134,6 +134,7 @@ GEM
       thread_safe (~> 0.1)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
+    wow-rails (0.0.1)
 
 PLATFORMS
   ruby
@@ -147,6 +148,7 @@ DEPENDENCIES
   middleman-deploy!
   middleman-sprockets
   pry-byebug
+  wow-rails
 
 BUNDLED WITH
    1.16.2
