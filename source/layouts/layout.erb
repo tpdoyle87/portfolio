@@ -6,14 +6,19 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="icon" type="image/png" href="../images/favicon.ico" sizes="32x32" />
     <title><%= current_page.data.title %></title>
     <%= stylesheet_link_tag "application" %>
-    <%= javascript_include_tag "application" %>
     <%= favicon_tag 'images/favicon.png' %>
   </head>
   <body>
-    <%= partial 'layouts/navbar', class: 'sticky' %>
+    <%= partial 'layouts/navbar' %>
     <%= yield %>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
+    <script src="https://codepen.io/jasperlachance/pen/QNMwBg"></script>
+    <%= javascript_include_tag "application" %>
   </body>
 </html>
